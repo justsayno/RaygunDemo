@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RaygunDemo.App", "RaygunDemo.App\", "{89F2B5A9-99CD-408A-9F84-7CEEF4F0F375}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51157"
+		Debug.AspNetCompiler.PhysicalPath = "RaygunDemo.App\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51157\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51157"
+		Release.AspNetCompiler.PhysicalPath = "RaygunDemo.App\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51157\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51157"
+		SlnRelativePath = "RaygunDemo.App\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{D61BD0EE-77AF-429B-BEC2-7CE808CEDA3E}"
+	ProjectSection(SolutionItems) = preProject
+		.bowerrc = .bowerrc
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.jshintrc = .jshintrc
+		.travis.yml = .travis.yml
+		.yo-rc.json = .yo-rc.json
+		bower.json = bower.json
+		Gruntfile.js = Gruntfile.js
+		package.json = package.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaygunDemo.WebApi", "RaygunDemo.WebApi\RaygunDemo.WebApi.csproj", "{2B5D358A-3981-48A9-B3CD-3CD5B039A835}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89F2B5A9-99CD-408A-9F84-7CEEF4F0F375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F2B5A9-99CD-408A-9F84-7CEEF4F0F375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F2B5A9-99CD-408A-9F84-7CEEF4F0F375}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F2B5A9-99CD-408A-9F84-7CEEF4F0F375}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2B5D358A-3981-48A9-B3CD-3CD5B039A835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5D358A-3981-48A9-B3CD-3CD5B039A835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5D358A-3981-48A9-B3CD-3CD5B039A835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5D358A-3981-48A9-B3CD-3CD5B039A835}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
