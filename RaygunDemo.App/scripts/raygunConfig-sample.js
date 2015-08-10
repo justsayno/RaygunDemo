@@ -1,0 +1,1 @@
+﻿Raygun.init('****Add your Raygun Key*****').attach();

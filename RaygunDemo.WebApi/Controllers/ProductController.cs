@@ -3,10 +3,11 @@ using RaygunDemo.WebAPI.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace RaygunDemo.WebAPI.Controllers
 {
-    [EnableCorsAttribute("http://localhost:52436", "*", "*")]
+    [EnableCorsAttribute("http://localhost:9001", "*", "*")]
     public class ProductsController : ApiController
     {
         // GET: api/Products

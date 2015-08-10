@@ -3,6 +3,7 @@ dist
 .tmp
 .sass-cache
 bower_components
+RaygunDemo.App/scripts/raygunConfig.js
 
 
 ## Ignore Visual Studio temporary files, build results, and

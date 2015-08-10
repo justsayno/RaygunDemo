@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mindscape.Raygun4Net.WebApi;
+using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -13,6 +15,14 @@ namespace RaygunDemo.WebApi
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
+              new CamelCasePropertyNamesContractResolver();
+
+            config.EnableCors();
+
+            //add raygun support
+            RaygunWebApiClient.Attach(config);
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

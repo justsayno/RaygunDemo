@@ -28,7 +28,7 @@ namespace RaygunDemo.WebApi.Models
         /// <returns></returns>
         internal List<Product> Retrieve()
         {
-            var filePath = HostingEnvironment.MapPath(@"~/App_Data/product.json");
+            var filePath = HostingEnvironment.MapPath(@"~/App_Data/products.json");
 
             var json = System.IO.File.ReadAllText(filePath);
 
