@@ -11,7 +11,7 @@
                            object.handledGlobally();
                        };
 
-                       this.tryCatchAndSendWithRaygun = function () {
+                       this.catchAndSendWithRaygun = function () {
                            try{
                                var object = {};
                                object.handledLocallyWithTryCatch();
