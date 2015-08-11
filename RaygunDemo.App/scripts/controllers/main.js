@@ -18,7 +18,13 @@ angular.module('raygunDemoApp')
           errorService.tryCatchAndSendWithRaygun();
       };
 
+      vm.sendWithUserInfo = function () {
+          errorService.sendWithUserInfo();
+      };
 
+      vm.sendWithCustomData = function () {
+          errorService.sendWithCustomData();
+      }
 
       vm.throwErrorCatch = function () {
 
