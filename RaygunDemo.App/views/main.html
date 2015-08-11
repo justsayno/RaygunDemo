@@ -1,8 +1,18 @@
 <div class="row" ng-controller="MainCtrl as vm">
-    <h2>Javascript Errors</h2>
-    
-    <button class="btn" ng-click="vm.tryCatchAndSendWithRaygun()">Locally Handled</button>
-    <button class="btn" ng-click="vm.throwUnhandledException()">Globally Handled</button>
-    <button class="btn" ng-click="vm.sendWithUserInfo()">Send with user info</button>
-    <button class="btn" ng-click="vm.sendWithCustomData()">Send with custom info</button>
+    <div class="col-sm-12">
+        <h2>Javascript Errors</h2>
+    <ul class="button-list">
+        <li><button class="btn" ng-click="vm.throwUnhandledException()">Globally Handled</button></li>
+        <li><button class="btn" ng-click="vm.tryCatchAndSendWithRaygun()">Caught and sent</button></li>
+        <li><button class="btn" ng-click="vm.sendWithUserInfo()">Send with user data</button></li>
+        <li><button class="btn" ng-click="vm.sendWithCustomData()">Send with custom data</button></li>
+    </ul>
+        <h2>.NET Errors</h2>
+        <ul class="button-list">
+        <li><button class="btn" ng-click="vm.remoteUnhandledException()">Globally Handled</button></li>
+        <li><button class="btn" ng-click="vm.remoteCatchAndSendToRaygun()">Caught and sent</button></li>
+        <li><button class="btn" ng-click="vm.remoteSendWithUserInformation()">Send with user info</button></li>
+        <li><button class="btn" ng-click="vm.remoteSendWithTags()">Send with tags</button></li>
+        <li><button class="btn" ng-click="vm.remoteSendWithCustomData()">Send with custom data</button></li>
+        </ul>
 </div>

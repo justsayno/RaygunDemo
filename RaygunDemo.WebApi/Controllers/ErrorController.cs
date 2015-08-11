@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web.Http.Cors;
 using Mindscape.Raygun4Net.WebApi;
 using Mindscape.Raygun4Net.Messages;
+using System.Diagnostics;
 
 namespace RaygunDemo.WebAPI.Controllers
 {
@@ -15,12 +16,13 @@ namespace RaygunDemo.WebAPI.Controllers
     {
         private RaygunWebApiClient _raygunClient = new RaygunWebApiClient();
 
-        // GET: api/Products
+        [HttpGet]
         public void ThrowUnhandledError()
         {
             throw new ApplicationException("OMG uncaugt exception!");
         }
 
+        [HttpGet]
         public void CatchAndSendToRaygun()
         {
             try
@@ -33,6 +35,7 @@ namespace RaygunDemo.WebAPI.Controllers
             }
         }
 
+        [HttpGet]
         public void SendWithUserInformation()
         {
             try
@@ -53,6 +56,7 @@ namespace RaygunDemo.WebAPI.Controllers
             }
         }
 
+        [HttpGet]
         public void SendWithTags()
         {
             try
@@ -66,18 +70,37 @@ namespace RaygunDemo.WebAPI.Controllers
             }
         }
 
+        [HttpGet]
         public void SendWithCustomData()
         {
             try
             {
                 throw new ApplicationException("Using a dictionary for a custom data object is cool");
             }
-            catch (Exception e) { 
-            //{
-            //    var customData = new Dictionary<string, object>() {
-            //        { "key", "value" }
-            //    };
-            //    _raygunClient.Send(e, customData);
+            catch (Exception e)
+            {
+                {
+                    var customData = new Dictionary<string, object>() {
+                    { "key", "value" }
+                };
+                    _raygunClient.Send(e,null, customData);
+                }
+            }
+        }
+
+
+        public void SendUsingTrace()
+        {
+            try {
+                throw new ApplicationException("We can handle all this using trace!");
+            }
+            catch (Exception e)
+            {
+                // any arg of type IList<string> will be treated as tags and any type of IDictionary will be treated as custom data 
+                // any arg of type Exception will be wrapped in the primary raygun exception object
+                var customData = new Dictionary<string, object> { { "myType", "some type" } };
+                var tags = new List<string> { "tag1", "tag1" };
+                Trace.TraceError("Something bad happened", e, tags, customData);
             }
         }
     }
