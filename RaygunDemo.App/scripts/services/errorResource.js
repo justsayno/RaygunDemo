@@ -8,25 +8,25 @@
                     'appSettings',
                     function errorResource($resource, appSettings) {
 
-                        this.throwUnhandledException = function () {
+                        this.throwUnhandledException = function() {
                             return $resource(appSettings.serverPath + '/api/error/ThrowUnhandledError');
-                        }
-                        
-                        this.catchAndSendToRaygun = function () {
+                        };
+
+                        this.catchAndSendToRaygun = function() {
                             return $resource(appSettings.serverPath + '/api/error/CatchAndSendToRaygun');
-                        }
-                        
-                        this.sendWithUserInformation = function () {
+                        };
+
+                        this.sendWithUserInformation = function() {
                             return $resource(appSettings.serverPath + '/api/error/SendWithUserInformation');
-                        }
-                        
-                        this.sendWithTags = function () {
+                        };
+
+                        this.sendWithTags = function() {
                             return $resource(appSettings.serverPath + '/api/error/SendWithTags');
-                        }
-                        
-                        this.sendWithCustomData = function () {
+                        };
+
+                        this.sendWithCustomData = function() {
                             return $resource(appSettings.serverPath + '/api/error/SendWithCustomData');
-                        }
+                        };
                         
                         return this;
                         
