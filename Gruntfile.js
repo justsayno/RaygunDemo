@@ -269,11 +269,18 @@ module.exports = function (grunt) {
     // concat: {
     //   dist: {}
     // },
+    concat: {
+        options: {
+            sourceMap: true
+        }
+    },
     uglify: {
-        generated: {
-            options: {
-                sourceMap: true
-            }
+        options: {
+            sourceMap: true,
+            sourceMapIn: function (uglifySource) {
+                return uglifySource + '.map';
+            },
+            sourceMapIncludeSources: true
         }
     },
     imagemin: {
