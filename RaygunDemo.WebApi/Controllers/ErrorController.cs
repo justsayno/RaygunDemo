@@ -72,12 +72,12 @@ namespace RaygunDemo.WebAPI.Controllers
             {
                 throw new ApplicationException("Using a dictionary for a custom data object is cool");
             }
-            catch (Exception e)
-            {
-                var customData = new Dictionary<string, object>() {
-                    { "key", "value" }
-                };
-                _raygunClient.Send(e, customData);
+            catch (Exception e) { 
+            //{
+            //    var customData = new Dictionary<string, object>() {
+            //        { "key", "value" }
+            //    };
+            //    _raygunClient.Send(e, customData);
             }
         }
     }
