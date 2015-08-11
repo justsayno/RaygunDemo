@@ -5,7 +5,7 @@ using System.Linq;
 using System;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using Mindscape.Raygun4Net.WebApi;
+using Mindscape.Raygun4Net;
 
 namespace RaygunDemo.WebAPI.Controllers
 {
