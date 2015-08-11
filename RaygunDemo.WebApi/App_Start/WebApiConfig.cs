@@ -15,7 +15,7 @@ namespace RaygunDemo.WebApi
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
+            config.EnableSystemDiagnosticsTracing();
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =
               new CamelCasePropertyNamesContractResolver();
 
