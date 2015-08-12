@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RaygunDemo.App", "RaygunDemo.App\", "{89F2B5A9-99CD-408A-9F84-7CEEF4F0F375}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RaygunDemo.App", "RaygunDemo.App", "{89F2B5A9-99CD-408A-9F84-7CEEF4F0F375}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_51157"
@@ -41,6 +41,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaygunDemo.WebApi", "RaygunDemo.WebApi\RaygunDemo.WebApi.csproj", "{2B5D358A-3981-48A9-B3CD-3CD5B039A835}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E29F8556-BFFD-4519-A6A4-613D20BFDED5}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D7D53643-33DB-4EA0-9272-10597FEAB5E2}"
+	ProjectSection(SolutionItems) = preProject
+		images\EnvironmentVariable1.jpg = images\EnvironmentVariable1.jpg
+		images\EnvironmentVariable2.jpg = images\EnvironmentVariable2.jpg
+		images\GitSetupStep1.jpg = images\GitSetupStep1.jpg
+		images\GitSetupStep2.jpg = images\GitSetupStep2.jpg
+		images\GitSetupStep3.jpg = images\GitSetupStep3.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +72,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7D53643-33DB-4EA0-9272-10597FEAB5E2} = {D61BD0EE-77AF-429B-BEC2-7CE808CEDA3E}
 	EndGlobalSection
 EndGlobal

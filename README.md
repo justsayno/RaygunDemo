@@ -1,13 +1,16 @@
 # raygun-demo
 
->Note: In order to get this application running you need to folow the following instructions to install all the pre-requisites:
->https://github.com/justsayno/fhf-demo/blob/master/setting-up-your-environment.md
+This application requires you have Git, NodeJs, Bower and Npm installed on your local machine. These steps are worth doing anyway
+and I have tried my best to make it worth in Windows correctly. Follow these instructions:
 
+https://github.com/justsayno/fhf-demo/blob/master/setting-up-your-environment.md
 
-This is a raygun demo project. The application is a very simple AngularJS client with an ASP.NET
+This is a Raygun demo project. The application is a very simple AngularJS client with an ASP.NET
 WEBAPI back end. All the application really does is has buttons to create errors in different
-ways. This assumes you have got a free trail of Raygun and have set up one application for
-JavaScript and one for ASP.NET WebAPI at http://raygun.io. 
+ways. This assumes you have got a free trial of Raygun and have set up one application for
+JavaScript and one for ASP.NET WebAPI at http://raygun.io. You will need to set up two applications,
+on for the App and one for the WebApi projects and get the Api key from the application settings page
+on each.
 
 Below describes the steps to get the site running:
 
@@ -31,9 +34,16 @@ version 0.11.1.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview. Run `grunt serve:dist` to get a local version
+Run `grunt` for building and `grunt serve` for preview. Run `grunt serve:dist` to get a local version of
 the production build.
 
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+## Final Note
+
+This is also a structure of project I have come up with for creating JavaScript only front end and WebAPi back ends using both
+Visual Studio and Yeoman.io generator. Look at my instructions for doing so here:
+
+[Creating an angular app and WebApi app with Yeoman and Visual Studio](creating-project-structure.md)
