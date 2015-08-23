@@ -1,1 +1,1 @@
-﻿Raygun.init('eTJSAsgiTEiksMshilh6jw==', null).attach().withCustomData({ custom: "data" });
+﻿Raygun.init('***********', null).attach().withCustomData({ custom: "data" });
