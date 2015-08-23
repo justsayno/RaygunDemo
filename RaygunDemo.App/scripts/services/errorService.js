@@ -23,8 +23,7 @@
 
                        this.sendWithUserInfo = function () {
                            Raygun.setUser('contact@sethreid.co.nz');
-                           var object = {};
-                           object.sendWithUserInfo();
+                           var result = 1 * countOfErrors;
                        }
                        
                        this.sendWithCustomData = function () {
